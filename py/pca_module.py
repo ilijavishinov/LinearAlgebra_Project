@@ -80,7 +80,8 @@ def pca(df: pd.DataFrame, svd: bool = False, print_steps: bool = True):
             method = 'eigen decomposition',
             eigenvalues = eigenvalues,
             eigenvectors = eigenvectors,
-            exec_time = exec_time
+            exec_time = exec_time,
+            explained_var = explained_variances
         )
         
         if print_steps:
@@ -110,7 +111,8 @@ def pca(df: pd.DataFrame, svd: bool = False, print_steps: bool = True):
             method = 'eigen decomposition',
             eigenvalues = sigma,
             eigenvectors = U,
-            exec_time = exec_time
+            exec_time = exec_time,
+            explained_var = explained_variances
         )
         
         if print_steps:
